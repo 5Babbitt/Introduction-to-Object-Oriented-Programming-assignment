@@ -12,12 +12,18 @@ namespace IOOP.Forms
 {
     public partial class LoginMenu : Form
     {
+
         public LoginMenu()
         {
             InitializeComponent();
         }
 
         private void txtUser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoginMenu_Load(object sender, EventArgs e)
         {
 
         }

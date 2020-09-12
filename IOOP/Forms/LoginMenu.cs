@@ -35,9 +35,9 @@ namespace IOOP.Forms
         {
             User details = new User(txtUser.Text, txtPassword.Text);
             link.Open();
-            SqlCommand check = new SqlCommand("select role from User where username='" + details.Username + "' and password='" + details.Password + "'", link);
+            SqlCommand check = new SqlCommand("SELECT COUNT(*) FROM User WHERE username='" + details.Username + "' and password='" + details.Password + "'", link);
             
-            int count = Convert.ToInt32(check.ExecuteScalar().ToString());
+            int count = (int)check.ExecuteScalar();
 
             if (count > 0)
             {

@@ -66,11 +66,23 @@
   <ItemGroup>
     <Compile Include="Classes\Club.cs" />
     <Compile Include="Classes\User.cs" />
+    <Compile Include="Forms\AdminActivityReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminActivityReport.Designer.cs">
+      <DependentUpon>AdminActivityReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminClubManagement.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\AdminClubManagement.Designer.cs">
       <DependentUpon>AdminClubManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminClubsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminClubsReport.Designer.cs">
+      <DependentUpon>AdminClubsReport.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AdminMenu.cs">
       <SubType>Form</SubType>
@@ -116,8 +128,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AdminActivityReport.resx">
+      <DependentUpon>AdminActivityReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminClubManagement.resx">
       <DependentUpon>AdminClubManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminClubsReport.resx">
+      <DependentUpon>AdminClubsReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>

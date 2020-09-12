@@ -155,6 +155,7 @@
             this.Controls.Add(this.btnSignOut);
             this.Name = "ClubRepMenu";
             this.Text = "ClubRepMenu";
+            this.Load += new System.EventHandler(this.ClubRepMenu_Load);
             this.grpDetails.ResumeLayout(false);
             this.grpDetails.PerformLayout();
             this.grpActivityLog.ResumeLayout(false);

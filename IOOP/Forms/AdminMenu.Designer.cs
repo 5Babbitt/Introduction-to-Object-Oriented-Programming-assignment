@@ -73,6 +73,7 @@
             this.btnManagement.TabIndex = 4;
             this.btnManagement.Text = "Club Management";
             this.btnManagement.UseVisualStyleBackColor = true;
+            this.btnManagement.Click += new System.EventHandler(this.btnManagement_Click);
             // 
             // AdminMenu
             // 

@@ -32,6 +32,7 @@
             this.txtSecretary = new System.Windows.Forms.TextBox();
             this.txtVPresident = new System.Windows.Forms.TextBox();
             this.txtPresident = new System.Windows.Forms.TextBox();
+            this.btnArchive = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lstClubs = new System.Windows.Forms.ListBox();
-            this.btnArchive = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.grpDetails.SuspendLayout();
             this.SuspendLayout();
@@ -98,6 +98,17 @@
             this.txtPresident.Name = "txtPresident";
             this.txtPresident.Size = new System.Drawing.Size(221, 29);
             this.txtPresident.TabIndex = 19;
+            // 
+            // btnArchive
+            // 
+            this.btnArchive.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArchive.Location = new System.Drawing.Point(267, 441);
+            this.btnArchive.Name = "btnArchive";
+            this.btnArchive.Size = new System.Drawing.Size(117, 49);
+            this.btnArchive.TabIndex = 18;
+            this.btnArchive.Text = "Deactivate and Archive";
+            this.btnArchive.UseVisualStyleBackColor = true;
+            this.btnArchive.Click += new System.EventHandler(this.btnArchive_Click);
             // 
             // btnSave
             // 
@@ -200,6 +211,7 @@
             this.dateEstablished.Name = "dateEstablished";
             this.dateEstablished.Size = new System.Drawing.Size(133, 26);
             this.dateEstablished.TabIndex = 11;
+            this.dateEstablished.Value = new System.DateTime(2020, 9, 13, 2, 36, 59, 0);
             // 
             // label2
             // 
@@ -259,17 +271,6 @@
             this.lstClubs.Size = new System.Drawing.Size(315, 364);
             this.lstClubs.TabIndex = 14;
             // 
-            // btnArchive
-            // 
-            this.btnArchive.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnArchive.Location = new System.Drawing.Point(267, 441);
-            this.btnArchive.Name = "btnArchive";
-            this.btnArchive.Size = new System.Drawing.Size(117, 49);
-            this.btnArchive.TabIndex = 18;
-            this.btnArchive.Text = "Deactivate and Archive";
-            this.btnArchive.UseVisualStyleBackColor = true;
-            this.btnArchive.Click += new System.EventHandler(this.btnArchive_Click);
-            // 
             // AdminClubManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,6 +283,7 @@
             this.Controls.Add(this.lstClubs);
             this.Name = "AdminClubManagement";
             this.Text = "AdminClubManagement";
+            this.Load += new System.EventHandler(this.AdminClubManagement_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.grpDetails.ResumeLayout(false);

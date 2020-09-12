@@ -16,5 +16,11 @@ namespace IOOP.Forms
         {
             InitializeComponent();
         }
+
+        private void btnManagement_Click(object sender, EventArgs e)
+        {
+            AdminClubManagement aClubMenu = new AdminClubManagement();
+            aClubMenu.ShowDialog();
+        }
     }
 }

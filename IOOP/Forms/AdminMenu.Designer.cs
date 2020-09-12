@@ -43,6 +43,7 @@
             this.btnSignOut.TabIndex = 7;
             this.btnSignOut.Text = "Sign Out";
             this.btnSignOut.UseVisualStyleBackColor = true;
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
             // 
             // btnWeeklyReport
             // 
@@ -53,6 +54,7 @@
             this.btnWeeklyReport.TabIndex = 6;
             this.btnWeeklyReport.Text = "Weekly Club Activity Report";
             this.btnWeeklyReport.UseVisualStyleBackColor = true;
+            this.btnWeeklyReport.Click += new System.EventHandler(this.btnWeeklyReport_Click);
             // 
             // btnClubReport
             // 
@@ -63,6 +65,7 @@
             this.btnClubReport.TabIndex = 5;
             this.btnClubReport.Text = "Club Report";
             this.btnClubReport.UseVisualStyleBackColor = true;
+            this.btnClubReport.Click += new System.EventHandler(this.btnClubReport_Click);
             // 
             // btnManagement
             // 
@@ -73,6 +76,7 @@
             this.btnManagement.TabIndex = 4;
             this.btnManagement.Text = "Club Management";
             this.btnManagement.UseVisualStyleBackColor = true;
+            this.btnManagement.Click += new System.EventHandler(this.btnManagement_Click);
             // 
             // AdminMenu
             // 

@@ -21,21 +21,11 @@ namespace IOOP.Forms
             InitializeComponent();
         }
 
-        private void txtUser_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LoginMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             User details = new User(txtUser.Text, txtPassword.Text);
             link.Open();
-            SqlCommand check = new SqlCommand("select role from User where username='" + details.Username + "' and password='" + details.Password + "'", link);
+            SqlCommand check = new SqlCommand("select count(*) from User where username ='"+details.Username+"' and password ='"+details.Password+"'", link);
             
             int count = Convert.ToInt32(check.ExecuteScalar().ToString());
 

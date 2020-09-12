@@ -72,7 +72,6 @@
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(239, 31);
             this.txtUser.TabIndex = 7;
-            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             // 
             // lblUser
             // 
@@ -96,7 +95,6 @@
             this.Controls.Add(this.lblUser);
             this.Name = "LoginMenu";
             this.Text = "LoginMenu";
-            this.Load += new System.EventHandler(this.LoginMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

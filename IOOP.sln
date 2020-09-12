@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOOP", "IOOP\IOOP.csproj", "{AE072C50-1FAF-45E3-B49E-08F36C4FFEBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE072C50-1FAF-45E3-B49E-08F36C4FFEBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE072C50-1FAF-45E3-B49E-08F36C4FFEBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE072C50-1FAF-45E3-B49E-08F36C4FFEBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE072C50-1FAF-45E3-B49E-08F36C4FFEBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA663248-02E2-474C-A5A2-B4D0123E88FB}
+	EndGlobalSection
+EndGlobal

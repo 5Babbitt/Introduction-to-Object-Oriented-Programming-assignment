@@ -25,13 +25,13 @@ namespace IOOP.Forms
         {
             User details = new User(txtUser.Text, txtPassword.Text);
             link.Open();
-            SqlCommand check = new SqlCommand("select count(*) from User where username ='"+details.Username+"' and password ='"+details.Password+"'", link);
+            SqlCommand check = new SqlCommand("select count(*) from Users where username='"+details.Username+"' and password='"+details.Password+"'", link);
             
             int count = Convert.ToInt32(check.ExecuteScalar().ToString());
 
             if (count > 0)
             {
-                SqlCommand roleCheck = new SqlCommand("select role from User where username='" + details.Username + "'", link);
+                SqlCommand roleCheck = new SqlCommand("select role from Users where username='" + details.Username + "'", link);
                 string userRole = roleCheck.ExecuteScalar().ToString();
                 if (userRole == "admin")
                 {

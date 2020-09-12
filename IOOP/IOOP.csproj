@@ -88,11 +88,11 @@
     <Compile Include="Forms\LoginMenu.Designer.cs">
       <DependentUpon>LoginMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Password.cs">
+    <Compile Include="Forms\RegisterClub.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Password.Designer.cs">
-      <DependentUpon>Password.cs</DependentUpon>
+    <Compile Include="Forms\RegisterClub.Designer.cs">
+      <DependentUpon>RegisterClub.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\StudentMenu.cs">
       <SubType>Form</SubType>
@@ -126,8 +126,8 @@
     <EmbeddedResource Include="Forms\LoginMenu.resx">
       <DependentUpon>LoginMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Password.resx">
-      <DependentUpon>Password.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\RegisterClub.resx">
+      <DependentUpon>RegisterClub.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\StudentMenu.resx">
       <DependentUpon>StudentMenu.cs</DependentUpon>

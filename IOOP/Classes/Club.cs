@@ -36,7 +36,5 @@ namespace IOOP_Assignment_Group_11.Classes
         {
             ClubDesc = d;
         }
-
-
     }
 }

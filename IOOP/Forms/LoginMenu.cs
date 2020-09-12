@@ -57,5 +57,10 @@ namespace IOOP.Forms
             link.Close();
 
         }
+
+        private void LoginMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +14,15 @@ namespace IOOP.Forms
 {
     public partial class ClubRepMenu : Form
     {
-        public ClubRepMenu()
+        public static string CName;
+
+        SqlConnection link = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+
+
+        public ClubRepMenu(string N)
         {
             InitializeComponent();
+            CName = N;
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -29,5 +37,27 @@ namespace IOOP.Forms
             log.ShowDialog();
 
         }
+
+        private void ClubRepMenu_Load(object sender, EventArgs e)
+        {
+
+            lblClubName.Text = CName;
+
+            link.Open();
+            SqlCommand loadCD = new SqlCommand("SELECT description FROM Club WHERE clubName='" + CName + "'", link);
+            SqlDataReader getCD = loadCD.ExecuteReader();
+            getCD.Read();
+            txtDetails.Text = getCD.GetString(0);
+            link.Close();
+
+            link.Open();
+            SqlCommand loadD = new SqlCommand("SELECT registrationDate FROM Club WHERE clubName='" + CName + "'", link);
+            SqlDataReader getD = loadD.ExecuteReader();
+            getD.Read();
+            lblDate.Text = getD.GetDateTime(0).ToString().Remove(11);
+            link.Close();
+
+        }
+
     }
 }

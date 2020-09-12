@@ -50,7 +50,7 @@ namespace IOOP.Forms
             SqlCommand checkDate = new SqlCommand("SELECT registrationDate FROM Club WHERE clubName='" + selectedClub + "'", link);
             SqlDataReader readDate = checkDate.ExecuteReader();
             readDate.Read();
-            lblDate.Text = "Registered Date: " + (readDate.GetDateTime(0)).ToString();
+            lblDate.Text = "Registered Date: " + readDate.GetDateTime(0).ToString().Remove(11);
             link.Close();
 
             link.Open();

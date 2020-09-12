@@ -45,7 +45,7 @@ namespace IOOP.Forms
                 }
                 else if (userRole == "club")
                 {
-                    ClubRepMenu c = new ClubRepMenu();
+                    ClubRepMenu c = new ClubRepMenu(txtUser.Text);
                     c.ShowDialog();
                 }
             }

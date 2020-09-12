@@ -48,7 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -63,6 +65,12 @@
   <ItemGroup>
     <Compile Include="Classes\Club.cs" />
     <Compile Include="Classes\User.cs" />
+    <Compile Include="Forms\AdminClubManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminClubManagement.Designer.cs">
+      <DependentUpon>AdminClubManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +88,12 @@
     </Compile>
     <Compile Include="Forms\LoginMenu.Designer.cs">
       <DependentUpon>LoginMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Password.Designer.cs">
+      <DependentUpon>Password.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\StudentMenu.cs">
       <SubType>Form</SubType>
@@ -101,6 +115,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AdminClubManagement.resx">
+      <DependentUpon>AdminClubManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginMenu.resx">
       <DependentUpon>LoginMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Password.resx">
+      <DependentUpon>Password.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\StudentMenu.resx">
       <DependentUpon>StudentMenu.cs</DependentUpon>

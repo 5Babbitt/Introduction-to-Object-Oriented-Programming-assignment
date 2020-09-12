@@ -22,5 +22,22 @@ namespace IOOP.Forms
             AdminClubManagement aClubMenu = new AdminClubManagement();
             aClubMenu.ShowDialog();
         }
+
+        private void btnClubReport_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnWeeklyReport_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSignOut_Click(object sender, EventArgs e)
+        {
+            LoginMenu _Login = new LoginMenu();
+            _Login.Show();
+            this.Hide();
+        }
     }
 }

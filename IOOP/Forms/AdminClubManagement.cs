@@ -17,6 +17,8 @@ namespace IOOP.Forms
     {
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
 
+        public string password;
+
         public AdminClubManagement()
         {
             InitializeComponent();
@@ -40,12 +42,11 @@ namespace IOOP.Forms
             string password = _password.password;
 
             Club obj = new Club(txtName.Text, dateEstablished.Value.Date, txtDescription.Text, txtPresident.Text, txtVPresident.Text, txtSecretary.Text);
-            SqlCommand cmd = new SqlCommand("insert into clubs(clubName, clubRegistrationDate, clubDescription, clubPresident, clubVicePresident, clubSecretary) values (@name, @date, @d, @p, @vp, @s)", con);
-            SqlCommand cmd2 = new SqlCommand("insert into users(username, password, role) values(@name, @password, 'club')", con);
+            SqlCommand cmd = new SqlCommand("insert into Club(clubName, registrationDate, description, president, vicePresident, secretary) values (@name, @date, @d, @p, @vp, @s)", con);
+            SqlCommand cmd2 = new SqlCommand("insert into Users(username, password, role) values(@name, '"+password+"', 'club')", con);
 
             cmd.Parameters.AddWithValue("@name", obj.ClubName);
             cmd2.Parameters.AddWithValue("@name", obj.ClubName);
-            cmd2.Parameters.AddWithValue("@password", password);
             cmd.Parameters.AddWithValue("@date", obj.ClubRegDate);
             cmd.Parameters.AddWithValue("@d", obj.ClubDesc);
             cmd.Parameters.AddWithValue("@p", obj.ClubPres);

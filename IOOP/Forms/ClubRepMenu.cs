@@ -16,5 +16,18 @@ namespace IOOP.Forms
         {
             InitializeComponent();
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            UpdateClubDesc desc = new UpdateClubDesc();
+            desc.ShowDialog();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            WeeklyLog log = new WeeklyLog();
+            log.ShowDialog();
+
+        }
     }
 }

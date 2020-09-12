@@ -95,6 +95,7 @@
             this.Controls.Add(this.lblUser);
             this.Name = "LoginMenu";
             this.Text = "LoginMenu";
+            this.Load += new System.EventHandler(this.LoginMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

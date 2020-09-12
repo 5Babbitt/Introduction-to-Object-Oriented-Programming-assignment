@@ -341,3 +341,5 @@ healthchecksdb
 
 # App config file
 App.config
+
+/Database/

@@ -31,14 +31,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.grpDetails = new System.Windows.Forms.GroupBox();
             this.txtDetails = new System.Windows.Forms.TextBox();
-            this.lblPreisdent = new System.Windows.Forms.Label();
+            this.lblPresident = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblClubName = new System.Windows.Forms.Label();
             this.btnSignOut = new System.Windows.Forms.Button();
             this.lstClubs = new System.Windows.Forms.ListBox();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.grpDetails.SuspendLayout();
             this.SuspendLayout();
@@ -46,7 +43,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.grpDetails);
-            this.panel1.Controls.Add(this.lblPreisdent);
+            this.panel1.Controls.Add(this.lblPresident);
             this.panel1.Controls.Add(this.lblDate);
             this.panel1.Controls.Add(this.lblClubName);
             this.panel1.Location = new System.Drawing.Point(321, 9);
@@ -78,15 +75,15 @@
             this.txtDetails.Size = new System.Drawing.Size(304, 242);
             this.txtDetails.TabIndex = 0;
             // 
-            // lblPreisdent
+            // lblPresident
             // 
-            this.lblPreisdent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreisdent.Location = new System.Drawing.Point(3, 113);
-            this.lblPreisdent.Name = "lblPreisdent";
-            this.lblPreisdent.Size = new System.Drawing.Size(323, 27);
-            this.lblPreisdent.TabIndex = 2;
-            this.lblPreisdent.Text = "Club President:";
-            this.lblPreisdent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPresident.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPresident.Location = new System.Drawing.Point(3, 113);
+            this.lblPresident.Name = "lblPresident";
+            this.lblPresident.Size = new System.Drawing.Size(323, 27);
+            this.lblPresident.TabIndex = 2;
+            this.lblPresident.Text = "Club President:";
+            this.lblPresident.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblDate
             // 
@@ -127,39 +124,11 @@
             this.lstClubs.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstClubs.FormattingEnabled = true;
             this.lstClubs.ItemHeight = 24;
-            this.lstClubs.Location = new System.Drawing.Point(27, 133);
+            this.lstClubs.Location = new System.Drawing.Point(23, 29);
             this.lstClubs.Name = "lstClubs";
-            this.lstClubs.Size = new System.Drawing.Size(276, 244);
+            this.lstClubs.Size = new System.Drawing.Size(279, 340);
             this.lstClubs.TabIndex = 9;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(27, 87);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(276, 40);
-            this.btnSearch.TabIndex = 8;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(27, 50);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(276, 31);
-            this.txtSearch.TabIndex = 7;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 29);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Enter Club Name";
+            this.lstClubs.SelectedIndexChanged += new System.EventHandler(this.lstClubs_SelectedIndexChanged);
             // 
             // StudentMenu
             // 
@@ -169,17 +138,14 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSignOut);
             this.Controls.Add(this.lstClubs);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.label1);
             this.Name = "StudentMenu";
             this.Text = "StudentMenu";
+            this.Load += new System.EventHandler(this.StudentMenu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.grpDetails.ResumeLayout(false);
             this.grpDetails.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -188,13 +154,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox grpDetails;
         private System.Windows.Forms.TextBox txtDetails;
-        private System.Windows.Forms.Label lblPreisdent;
+        private System.Windows.Forms.Label lblPresident;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblClubName;
         private System.Windows.Forms.Button btnSignOut;
         private System.Windows.Forms.ListBox lstClubs;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.Label label1;
     }
 }

@@ -48,7 +48,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -62,7 +65,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Club.cs" />
-    <Compile Include="Classes\user.cs" />
+    <Compile Include="Classes\User.cs" />
+    <Compile Include="Forms\AdminActivityReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminActivityReport.Designer.cs">
+      <DependentUpon>AdminActivityReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminClubManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminClubManagement.Designer.cs">
+      <DependentUpon>AdminClubManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminClubsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminClubsReport.Designer.cs">
+      <DependentUpon>AdminClubsReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +101,12 @@
     </Compile>
     <Compile Include="Forms\LoginMenu.Designer.cs">
       <DependentUpon>LoginMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegisterClub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegisterClub.Designer.cs">
+      <DependentUpon>RegisterClub.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\StudentMenu.cs">
       <SubType>Form</SubType>
@@ -101,6 +128,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AdminActivityReport.resx">
+      <DependentUpon>AdminActivityReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminClubManagement.resx">
+      <DependentUpon>AdminClubManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminClubsReport.resx">
+      <DependentUpon>AdminClubsReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginMenu.resx">
       <DependentUpon>LoginMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegisterClub.resx">
+      <DependentUpon>RegisterClub.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\StudentMenu.resx">
       <DependentUpon>StudentMenu.cs</DependentUpon>
@@ -128,6 +167,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="App.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -149,6 +189,16 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Database\ClubAppDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database\ClubAppDB_log.ldf">
+      <DependentUpon>ClubAppDB.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

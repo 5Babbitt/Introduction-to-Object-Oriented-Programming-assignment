@@ -17,19 +17,24 @@ namespace IOOP_Assignment_Group_11.Classes
 
         public Club(string n, DateTime rd, string d, string p, string vp, string s)
         {
-            clubName = n;
-            clubRegDate = rd;
-            clubDesc = d;
-            clubPres = p;
-            clubVPres = vp;
-            clubSec = s;
+            ClubName = n;
+            ClubRegDate = rd;
+            ClubDesc = d;
+            ClubPres = p;
+            ClubVPres = vp;
+            ClubSec = s;
         }
+
+        public string ClubName { get => clubName; set => clubName = value; }
+        public DateTime ClubRegDate { get => clubRegDate; set => clubRegDate = value; }
+        public string ClubDesc { get => clubDesc; set => clubDesc = value; }
+        public string ClubPres { get => clubPres; set => clubPres = value; }
+        public string ClubVPres { get => clubVPres; set => clubVPres = value; }
+        public string ClubSec { get => clubSec; set => clubSec = value; }
 
         public void UpdateClubDesc(string d)
         {
-            clubDesc = d;
+            ClubDesc = d;
         }
-
-
     }
 }

@@ -16,5 +16,28 @@ namespace IOOP.Forms
         {
             InitializeComponent();
         }
+
+        private void btnManagement_Click(object sender, EventArgs e)
+        {
+            AdminClubManagement aClubMenu = new AdminClubManagement();
+            aClubMenu.ShowDialog();
+        }
+
+        private void btnClubReport_Click(object sender, EventArgs e)
+        {
+            AdminClubsReport aClubReport = new AdminClubsReport();
+            aClubReport.ShowDialog();
+        }
+
+        private void btnWeeklyReport_Click(object sender, EventArgs e)
+        {
+            AdminActivityReport aActivityReport = new AdminActivityReport();
+            aActivityReport.ShowDialog();
+        }
+
+        private void btnSignOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

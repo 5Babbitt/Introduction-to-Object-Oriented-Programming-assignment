@@ -31,10 +31,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtSecretary = new System.Windows.Forms.TextBox();
             this.txtVPresident = new System.Windows.Forms.TextBox();
+            this.txtDate = new System.Windows.Forms.TextBox();
             this.txtPresident = new System.Windows.Forms.TextBox();
             this.btnArchive = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.btnRegister = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,8 +44,8 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.lstClubs = new System.Windows.Forms.ListBox();
-            this.txtDate = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.grpDetails.SuspendLayout();
             this.SuspendLayout();
@@ -87,6 +87,15 @@
             this.txtVPresident.Size = new System.Drawing.Size(221, 29);
             this.txtVPresident.TabIndex = 20;
             // 
+            // txtDate
+            // 
+            this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDate.Location = new System.Drawing.Point(178, 51);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.ReadOnly = true;
+            this.txtDate.Size = new System.Drawing.Size(206, 29);
+            this.txtDate.TabIndex = 19;
+            // 
             // txtPresident
             // 
             this.txtPresident.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -97,6 +106,7 @@
             // 
             // btnArchive
             // 
+            this.btnArchive.Enabled = false;
             this.btnArchive.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnArchive.Location = new System.Drawing.Point(207, 441);
             this.btnArchive.Name = "btnArchive";
@@ -108,6 +118,7 @@
             // 
             // btnSave
             // 
+            this.btnSave.Enabled = false;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Location = new System.Drawing.Point(10, 441);
             this.btnSave.Name = "btnSave";
@@ -116,17 +127,6 @@
             this.btnSave.Text = "Update Details";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnRegister
-            // 
-            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.Location = new System.Drawing.Point(12, 452);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(315, 35);
-            this.btnRegister.TabIndex = 17;
-            this.btnRegister.Text = "Register New Club";
-            this.btnRegister.UseVisualStyleBackColor = true;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // label7
             // 
@@ -220,6 +220,17 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Established Date:";
             // 
+            // btnRegister
+            // 
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Location = new System.Drawing.Point(12, 452);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(315, 35);
+            this.btnRegister.TabIndex = 17;
+            this.btnRegister.Text = "Register New Club";
+            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
             // lstClubs
             // 
             this.lstClubs.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -230,15 +241,6 @@
             this.lstClubs.Size = new System.Drawing.Size(315, 436);
             this.lstClubs.TabIndex = 14;
             this.lstClubs.SelectedIndexChanged += new System.EventHandler(this.lstClubs_SelectedIndexChanged);
-            // 
-            // txtDate
-            // 
-            this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDate.Location = new System.Drawing.Point(178, 51);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.ReadOnly = true;
-            this.txtDate.Size = new System.Drawing.Size(206, 29);
-            this.txtDate.TabIndex = 19;
             // 
             // AdminClubManagement
             // 

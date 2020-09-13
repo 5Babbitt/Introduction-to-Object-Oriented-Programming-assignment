@@ -25,18 +25,18 @@ namespace IOOP.Forms
 
         private void btnClubReport_Click(object sender, EventArgs e)
         {
-
+            AdminClubsReport aClubReport = new AdminClubsReport();
+            aClubReport.ShowDialog();
         }
 
         private void btnWeeklyReport_Click(object sender, EventArgs e)
         {
-
+            AdminActivityReport aActivityReport = new AdminActivityReport();
+            aActivityReport.ShowDialog();
         }
 
         private void btnSignOut_Click(object sender, EventArgs e)
         {
-            LoginMenu _Login = new LoginMenu();
-            _Login.Show();
             this.Hide();
         }
     }

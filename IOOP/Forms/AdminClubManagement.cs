@@ -27,7 +27,32 @@ namespace IOOP.Forms
         private void btnArchive_Click(object sender, EventArgs e)
         {
             con.Open();
-            SqlCommand cmd = new SqlCommand("");
+            SqlCommand cmd1 = new SqlCommand("select registrationDate from Club where clubName='" + txtName.Text + "'", con);
+            SqlDataReader readDate = cmd1.ExecuteReader();
+            readDate.Read();
+            DateTime rDate = readDate.GetDateTime(0);
+            con.Close();
+
+            con.Open();
+            SqlCommand cmd = new SqlCommand("insert into Archive (clubName, regDate) values (@name, @regDate)", con);
+            SqlCommand cmd2 = new SqlCommand("Delete from Club where clubName='" + txtName.Text + "'", con);
+            SqlCommand cmd3 = new SqlCommand("Delete from Users where username='" + txtName.Text + "'", con);
+
+            cmd.Parameters.AddWithValue("@name", txtName.Text);
+            cmd.Parameters.AddWithValue("@regDate", rDate);
+
+            int i = cmd.ExecuteNonQuery();
+            cmd2.ExecuteNonQuery();
+            cmd3.ExecuteNonQuery();
+
+            con.Close();
+
+            if (i != 0)
+                MessageBox.Show("Club Archived Successfully");
+            else
+                MessageBox.Show("Unable to Archive");
+
+            UpdateListBox();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -48,6 +73,8 @@ namespace IOOP.Forms
                 MessageBox.Show("Unable to Update");
 
             con.Close();
+
+            UpdateListBox();
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -102,6 +129,9 @@ namespace IOOP.Forms
             readSec.Read();
             txtSecretary.Text = readSec.GetString(0);
             con.Close();
+
+            btnSave.Enabled = true;
+            btnArchive.Enabled = true;
         }
 
         private void UpdateListBox()

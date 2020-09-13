@@ -52,7 +52,6 @@
             this.lstClubs.ScrollAlwaysVisible = true;
             this.lstClubs.Size = new System.Drawing.Size(341, 388);
             this.lstClubs.TabIndex = 4;
-            this.lstClubs.SelectedIndexChanged += new System.EventHandler(this.lstClubs_SelectedIndexChanged);
             // 
             // AdminClubsReport
             // 
@@ -63,6 +62,7 @@
             this.Controls.Add(this.lstClubs);
             this.Name = "AdminClubsReport";
             this.Text = "AdminClubsReport";
+            this.Load += new System.EventHandler(this.AdminClubsReport_Load);
             this.ResumeLayout(false);
 
         }

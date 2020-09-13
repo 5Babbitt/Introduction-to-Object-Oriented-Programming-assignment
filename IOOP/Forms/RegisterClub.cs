@@ -43,6 +43,8 @@ namespace IOOP.Forms
 
         private void Register()
         {
+            
+            
             con.Open();
             string password = txtPassword2.Text;
 

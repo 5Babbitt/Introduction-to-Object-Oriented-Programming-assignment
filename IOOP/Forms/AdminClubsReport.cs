@@ -21,9 +21,18 @@ namespace IOOP.Forms
             InitializeComponent();
         }
 
-        private void lstClubs_SelectedIndexChanged(object sender, EventArgs e)
+        private void AdminClubsReport_Load(object sender, EventArgs e)
         {
+            lstClubs.Items.Clear();
 
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select clubName from Club", con);
+            SqlDataReader update = cmd.ExecuteReader();
+            while (update.Read())
+            {
+                lstClubs.Items.Add(update.GetString(0));
+            }
+            con.Close();
         }
     }
 }

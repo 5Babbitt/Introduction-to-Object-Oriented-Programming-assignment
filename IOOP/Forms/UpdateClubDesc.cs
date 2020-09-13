@@ -45,18 +45,9 @@ namespace IOOP.Forms
 
         }
 
-       
-            
+        private void UpdateClubDesc_Load(object sender, EventArgs e)
+        {
 
-            
-
-
-
-            
-
-
-        
-
-        
+        }
     }
 }

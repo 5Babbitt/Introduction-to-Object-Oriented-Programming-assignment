@@ -44,7 +44,6 @@
             this.btnDiscard.TabIndex = 9;
             this.btnDiscard.Text = "Discard";
             this.btnDiscard.UseVisualStyleBackColor = true;
-            this.btnDiscard.Click += new System.EventHandler(this.btnDiscard_Click);
             // 
             // btnSave
             // 
@@ -91,6 +90,7 @@
             this.Controls.Add(this.grpDetails);
             this.Name = "UpdateClubDesc";
             this.Text = "UpdateClubDesc";
+            this.Load += new System.EventHandler(this.UpdateClubDesc_Load);
             this.grpDetails.ResumeLayout(false);
             this.grpDetails.PerformLayout();
             this.ResumeLayout(false);

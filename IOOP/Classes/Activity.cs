@@ -8,5 +8,6 @@ namespace IOOP.Classes
 {
     class Activity
     {
+
     }
 }

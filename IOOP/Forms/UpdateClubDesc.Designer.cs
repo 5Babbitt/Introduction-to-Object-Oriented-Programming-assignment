@@ -44,6 +44,7 @@
             this.btnDiscard.TabIndex = 9;
             this.btnDiscard.Text = "Discard";
             this.btnDiscard.UseVisualStyleBackColor = true;
+            this.btnDiscard.Click += new System.EventHandler(this.btnDiscard_Click);
             // 
             // btnSave
             // 

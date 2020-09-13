@@ -1,2 +1,3 @@
-club - 2020/06/12 01:04:00 - this is a test activity
-club - 2020/09/17 00:00:00 - another test here
+club - 2020/09/17 00:00:00 - This will be a fun event
+Test Club 1 - 2020/09/17 00:00:00 - Here is another one
+Test Club 2 - 2020/09/17 00:00:00 - This will be another fun event

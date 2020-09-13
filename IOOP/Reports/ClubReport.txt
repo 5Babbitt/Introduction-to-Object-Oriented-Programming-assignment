@@ -1,2 +1,6 @@
 club - est. 2012/12/12 
-club2 - est. 2011/11/11 
+Test Club 1 - est. 2017/09/01 
+Test Club 2 - est. 2013/02/13 
+Test Club 3 - est. 2020/09/13 
+Test Club 4 - est. 2020/09/13 
+Test Club 5 - est. 2020/09/13 

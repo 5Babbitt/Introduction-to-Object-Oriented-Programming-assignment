@@ -260,6 +260,7 @@
             this.Controls.Add(this.label3);
             this.Name = "RegisterClub";
             this.Text = "RegisterClub";
+            this.Load += new System.EventHandler(this.RegisterClub_Load);
             this.grpDetails.ResumeLayout(false);
             this.grpDetails.PerformLayout();
             this.ResumeLayout(false);

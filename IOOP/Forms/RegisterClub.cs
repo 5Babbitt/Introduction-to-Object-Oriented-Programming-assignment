@@ -71,5 +71,10 @@ namespace IOOP.Forms
 
             con.Close();
         }
+
+        private void RegisterClub_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

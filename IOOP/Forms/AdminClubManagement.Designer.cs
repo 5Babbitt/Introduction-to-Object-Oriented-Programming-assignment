@@ -233,12 +233,12 @@
             // 
             // lstClubs
             // 
-            this.lstClubs.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstClubs.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstClubs.FormattingEnabled = true;
-            this.lstClubs.ItemHeight = 24;
-            this.lstClubs.Location = new System.Drawing.Point(12, 10);
+            this.lstClubs.ItemHeight = 29;
+            this.lstClubs.Location = new System.Drawing.Point(12, 7);
             this.lstClubs.Name = "lstClubs";
-            this.lstClubs.Size = new System.Drawing.Size(315, 436);
+            this.lstClubs.Size = new System.Drawing.Size(315, 439);
             this.lstClubs.TabIndex = 14;
             this.lstClubs.SelectedIndexChanged += new System.EventHandler(this.lstClubs_SelectedIndexChanged);
             // 
@@ -251,7 +251,7 @@
             this.Controls.Add(this.lstClubs);
             this.Controls.Add(this.btnRegister);
             this.Name = "AdminClubManagement";
-            this.Text = "AdminClubManagement";
+            this.Text = "Club Management";
             this.Load += new System.EventHandler(this.AdminClubManagement_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -26,6 +26,8 @@ namespace IOOP.Forms
         {
             if (txtPassword1.Text == txtPassword2.Text && txtPassword2.TextLength >= 3 && txtPassword2.TextLength <= 18)
             {
+                
+                
                 Register();
 
                 this.Close();
@@ -43,8 +45,6 @@ namespace IOOP.Forms
 
         private void Register()
         {
-            
-            
             con.Open();
             string password = txtPassword2.Text;
 

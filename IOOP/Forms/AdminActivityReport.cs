@@ -16,5 +16,10 @@ namespace IOOP.Forms
         {
             InitializeComponent();
         }
+
+        private void AdminActivityReport_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

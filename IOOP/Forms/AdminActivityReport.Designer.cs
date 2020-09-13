@@ -62,6 +62,7 @@
             this.Controls.Add(this.lstActivity);
             this.Name = "AdminActivityReport";
             this.Text = "AdminActivityReport";
+            this.Load += new System.EventHandler(this.AdminActivityReport_Load);
             this.ResumeLayout(false);
 
         }

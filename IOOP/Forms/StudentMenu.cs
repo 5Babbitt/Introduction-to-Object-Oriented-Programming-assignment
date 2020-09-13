@@ -61,9 +61,10 @@ namespace IOOP.Forms
             link.Close();
         }
 
-        private void txtDetails_TextChanged(object sender, EventArgs e)
+        private void btnSignOut_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            
         }
     }
 }

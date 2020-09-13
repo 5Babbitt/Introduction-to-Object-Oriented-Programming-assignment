@@ -17,8 +17,6 @@ namespace IOOP.Forms
     {
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
 
-        public string password;
-
         public AdminClubManagement()
         {
             InitializeComponent();

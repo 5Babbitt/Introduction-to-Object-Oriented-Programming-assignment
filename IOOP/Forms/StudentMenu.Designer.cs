@@ -119,6 +119,7 @@
             this.btnSignOut.TabIndex = 10;
             this.btnSignOut.Text = "Sign Out";
             this.btnSignOut.UseVisualStyleBackColor = true;
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
             // 
             // lstClubs
             // 

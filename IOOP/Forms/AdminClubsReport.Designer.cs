@@ -41,6 +41,7 @@
             this.btnPrint.TabIndex = 5;
             this.btnPrint.Text = "Print Report";
             this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // lstClubs
             // 
@@ -61,7 +62,7 @@
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.lstClubs);
             this.Name = "AdminClubsReport";
-            this.Text = "AdminClubsReport";
+            this.Text = "Clubs Report";
             this.Load += new System.EventHandler(this.AdminClubsReport_Load);
             this.ResumeLayout(false);
 

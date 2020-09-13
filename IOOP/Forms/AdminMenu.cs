@@ -39,5 +39,10 @@ namespace IOOP.Forms
         {
             this.Hide();
         }
+
+        private void AdminMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

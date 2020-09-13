@@ -26,12 +26,28 @@ namespace IOOP.Forms
 
         private void btnArchive_Click(object sender, EventArgs e)
         {
-
+            con.Open();
+            SqlCommand cmd = new SqlCommand("");
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("update Club set description=@desc,president=@pres,vicePresident=@vPres,secretary=@sec where clubName='" + txtName.Text + "'", con);
 
+            cmd.Parameters.AddWithValue("@desc", txtDescription.Text);
+            cmd.Parameters.AddWithValue("@pres", txtPresident.Text);
+            cmd.Parameters.AddWithValue("@vPres", txtVPresident.Text);
+            cmd.Parameters.AddWithValue("@sec", txtSecretary.Text);
+
+            int i = cmd.ExecuteNonQuery();
+
+            if (i != 0)
+                MessageBox.Show("Club Info Updated Successful");
+            else
+                MessageBox.Show("Unable to Update");
+
+            con.Close();
         }
 
         private void btnRegister_Click(object sender, EventArgs e)

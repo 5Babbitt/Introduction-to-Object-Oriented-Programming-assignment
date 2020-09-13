@@ -91,6 +91,7 @@
             // 
             this.lstBoxClubAct.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstBoxClubAct.FormattingEnabled = true;
+            this.lstBoxClubAct.HorizontalScrollbar = true;
             this.lstBoxClubAct.ItemHeight = 24;
             this.lstBoxClubAct.Location = new System.Drawing.Point(6, 25);
             this.lstBoxClubAct.Name = "lstBoxClubAct";

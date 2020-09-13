@@ -53,6 +53,7 @@ namespace IOOP.Forms
             lblDate.Text = getD.GetDateTime(0).ToString().Remove(11);
             link.Close();
 
+            UpdateActivities();
         }
 
         private void btnSignOut_Click(object sender, EventArgs e)
@@ -67,6 +68,13 @@ namespace IOOP.Forms
             SqlDataReader getCD = loadCD.ExecuteReader();
             getCD.Read();
             txtDetails.Text = getCD.GetString(0);
+            link.Close();
+        }
+
+        private void UpdateActivities()
+        {
+            link.Open();
+
             link.Close();
         }
     }

@@ -61,6 +61,7 @@
             // 
             // txtDescription
             // 
+            this.txtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescription.Location = new System.Drawing.Point(0, 25);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
@@ -72,9 +73,9 @@
             this.dateOfEntry.CustomFormat = "dd/MM/yyyy hh:mm tt";
             this.dateOfEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateOfEntry.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateOfEntry.Location = new System.Drawing.Point(189, 73);
+            this.dateOfEntry.Location = new System.Drawing.Point(176, 78);
             this.dateOfEntry.Name = "dateOfEntry";
-            this.dateOfEntry.Size = new System.Drawing.Size(228, 31);
+            this.dateOfEntry.Size = new System.Drawing.Size(264, 31);
             this.dateOfEntry.TabIndex = 10;
             this.dateOfEntry.Value = new System.DateTime(2020, 9, 17, 0, 0, 0, 0);
             // 
@@ -82,7 +83,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 77);
+            this.label2.Location = new System.Drawing.Point(12, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(148, 25);
             this.label2.TabIndex = 9;
@@ -90,7 +91,7 @@
             // 
             // lblClubName
             // 
-            this.lblClubName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClubName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClubName.Location = new System.Drawing.Point(3, 9);
             this.lblClubName.Name = "lblClubName";
             this.lblClubName.Size = new System.Drawing.Size(447, 61);

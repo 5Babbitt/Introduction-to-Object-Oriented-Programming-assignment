@@ -74,7 +74,6 @@
             this.txtDetails.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtDetails.Size = new System.Drawing.Size(304, 242);
             this.txtDetails.TabIndex = 0;
-            this.txtDetails.TextChanged += new System.EventHandler(this.txtDetails_TextChanged);
             // 
             // lblPresident
             // 

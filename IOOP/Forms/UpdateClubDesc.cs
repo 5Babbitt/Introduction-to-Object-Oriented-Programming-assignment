@@ -45,26 +45,6 @@ namespace IOOP.Forms
 
         }
 
-       
-            
-
-            
-
-
-
-            
-
-
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnDiscard_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+      
     }
 }

@@ -41,6 +41,7 @@
             this.btnPrint.TabIndex = 3;
             this.btnPrint.Text = "Print Report";
             this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // lstActivity
             // 

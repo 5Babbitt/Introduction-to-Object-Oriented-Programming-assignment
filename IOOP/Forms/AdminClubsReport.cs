@@ -27,11 +27,11 @@ namespace IOOP.Forms
             lstClubs.Items.Clear();
 
             con.Open();
-            SqlCommand cmd = new SqlCommand("select clubName from Club", con);
+            SqlCommand cmd = new SqlCommand("select * from Club", con);
             SqlDataReader update = cmd.ExecuteReader();
             while (update.Read())
             {
-                lstClubs.Items.Add(update.GetString(0));
+                lstClubs.Items.Add(update.GetString(1) + " - est. " + update.GetDateTime(2).ToString().Remove(11));
             }
             con.Close();
         }
@@ -43,11 +43,11 @@ namespace IOOP.Forms
             using (StreamWriter fs = File.CreateText(Fpath))
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select clubName, registrationDate from Club", con);
+                SqlCommand cmd = new SqlCommand("select * from Club", con);
                 SqlDataReader read = cmd.ExecuteReader();
                 while (read.Read())
                 {
-                    fs.WriteLine(read.GetString(0));
+                    fs.WriteLine(read.GetString(1) + " - est. " + read.GetDateTime(2).ToString().Remove(11));
                 }
                 con.Close();
             }

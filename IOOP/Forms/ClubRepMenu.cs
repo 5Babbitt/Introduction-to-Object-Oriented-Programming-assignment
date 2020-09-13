@@ -46,6 +46,8 @@ namespace IOOP.Forms
 
             UpdateDescription();
 
+            UpdateActivities();
+
             link.Open();
             SqlCommand loadD = new SqlCommand("SELECT registrationDate FROM Club WHERE clubName='" + CName + "'", link);
             SqlDataReader getD = loadD.ExecuteReader();
@@ -53,7 +55,6 @@ namespace IOOP.Forms
             lblDate.Text = getD.GetDateTime(0).ToString().Remove(11);
             link.Close();
 
-            UpdateActivities();
         }
 
         private void btnSignOut_Click(object sender, EventArgs e)
@@ -74,6 +75,16 @@ namespace IOOP.Forms
         private void UpdateActivities()
         {
             link.Open();
+            SqlCommand cmd = new SqlCommand("select * from Activity where clubName='" + CName + "'", link);
+            SqlDataReader info = cmd.ExecuteReader();
+            
+            while (info.Read())
+            {
+                DateTime d = info.GetDateTime(2);
+                string s = info.GetString(3);
+
+                lstBoxClubAct.Items.Add(CName + " - " + d.ToString() + " - " + s);
+            }
 
             link.Close();
         }

@@ -48,6 +48,8 @@ namespace IOOP.Forms
                     MessageBox.Show("Unable to add activity");
 
                 con.Close();
+
+                this.Hide();
             }
             else
             {

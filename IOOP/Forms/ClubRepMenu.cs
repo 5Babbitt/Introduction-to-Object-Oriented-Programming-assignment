@@ -27,7 +27,7 @@ namespace IOOP.Forms
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            UpdateClubDesc desc = new UpdateClubDesc();
+            UpdateClubDesc desc = new UpdateClubDesc(CName);
             desc.ShowDialog();
         }
 

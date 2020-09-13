@@ -61,8 +61,8 @@ namespace IOOP.Forms
 
         private void btnSignOut_Click(object sender, EventArgs e)
         {
-            LoginMenu lobby = new LoginMenu();
-            lobby.ShowDialog();
+            this.Hide();
+            
         }
     }
 }

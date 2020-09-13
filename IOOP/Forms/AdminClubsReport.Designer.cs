@@ -30,6 +30,7 @@
         {
             this.btnPrint = new System.Windows.Forms.Button();
             this.lstClubs = new System.Windows.Forms.ListBox();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // btnPrint
@@ -53,6 +54,7 @@
             this.lstClubs.ScrollAlwaysVisible = true;
             this.lstClubs.Size = new System.Drawing.Size(341, 388);
             this.lstClubs.TabIndex = 4;
+            this.lstClubs.SelectedIndexChanged += new System.EventHandler(this.lstClubs_SelectedIndexChanged);
             // 
             // AdminClubsReport
             // 
@@ -72,5 +74,6 @@
 
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.ListBox lstClubs;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }

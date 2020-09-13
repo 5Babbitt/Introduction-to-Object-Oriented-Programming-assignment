@@ -89,7 +89,6 @@
             this.Controls.Add(this.grpDetails);
             this.Name = "UpdateClubDesc";
             this.Text = "UpdateClubDesc";
-            this.Load += new System.EventHandler(this.UpdateClubDesc_Load);
             this.grpDetails.ResumeLayout(false);
             this.grpDetails.PerformLayout();
             this.ResumeLayout(false);

@@ -33,8 +33,7 @@
             this.textDescription = new System.Windows.Forms.TextBox();
             this.dateOfEntry = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtTitle = new System.Windows.Forms.TextBox();
+            this.lblClubName = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,52 +69,43 @@
             // 
             // dateOfEntry
             // 
-            this.dateOfEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateOfEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateOfEntry.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateOfEntry.Location = new System.Drawing.Point(128, 93);
+            this.dateOfEntry.Location = new System.Drawing.Point(177, 73);
             this.dateOfEntry.Name = "dateOfEntry";
-            this.dateOfEntry.Size = new System.Drawing.Size(133, 26);
+            this.dateOfEntry.Size = new System.Drawing.Size(169, 31);
             this.dateOfEntry.TabIndex = 10;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 96);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(22, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 20);
+            this.label2.Size = new System.Drawing.Size(148, 25);
             this.label2.TabIndex = 9;
             this.label2.Text = "Date of Event:";
             // 
-            // label1
+            // lblClubName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 25);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Log Title";
-            // 
-            // txtTitle
-            // 
-            this.txtTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTitle.Location = new System.Drawing.Point(12, 43);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(346, 40);
-            this.txtTitle.TabIndex = 7;
+            this.lblClubName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClubName.Location = new System.Drawing.Point(3, 9);
+            this.lblClubName.Name = "lblClubName";
+            this.lblClubName.Size = new System.Drawing.Size(373, 61);
+            this.lblClubName.TabIndex = 13;
+            this.lblClubName.Text = "Club Name";
+            this.lblClubName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // WeeklyLog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(379, 392);
+            this.Controls.Add(this.lblClubName);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dateOfEntry);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtTitle);
             this.Name = "WeeklyLog";
             this.Text = "WeeklyLog";
             this.groupBox1.ResumeLayout(false);
@@ -132,7 +122,6 @@
         private System.Windows.Forms.TextBox textDescription;
         private System.Windows.Forms.DateTimePicker dateOfEntry;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtTitle;
+        private System.Windows.Forms.Label lblClubName;
     }
 }

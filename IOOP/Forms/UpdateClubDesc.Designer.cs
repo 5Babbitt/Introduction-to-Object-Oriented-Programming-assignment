@@ -66,6 +66,7 @@
             this.grpDetails.TabIndex = 7;
             this.grpDetails.TabStop = false;
             this.grpDetails.Text = "Club Description";
+            this.grpDetails.Enter += new System.EventHandler(this.grpDetails_Enter);
             // 
             // txtDetails
             // 
@@ -89,7 +90,6 @@
             this.Controls.Add(this.grpDetails);
             this.Name = "UpdateClubDesc";
             this.Text = "UpdateClubDesc";
-            this.Load += new System.EventHandler(this.UpdateClubDesc_Load);
             this.grpDetails.ResumeLayout(false);
             this.grpDetails.PerformLayout();
             this.ResumeLayout(false);

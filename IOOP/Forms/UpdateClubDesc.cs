@@ -60,5 +60,10 @@ namespace IOOP.Forms
         {
             this.Close();
         }
+
+        private void grpDetails_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

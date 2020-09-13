@@ -32,9 +32,5 @@ namespace IOOP_Assignment_Group_11.Classes
         public string ClubVPres { get => clubVPres; set => clubVPres = value; }
         public string ClubSec { get => clubSec; set => clubSec = value; }
 
-        public void UpdateClubDesc(string d)
-        {
-            ClubDesc = d;
-        }
     }
 }

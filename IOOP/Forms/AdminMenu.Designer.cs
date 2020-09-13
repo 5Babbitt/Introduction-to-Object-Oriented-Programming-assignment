@@ -89,6 +89,7 @@
             this.Controls.Add(this.btnManagement);
             this.Name = "AdminMenu";
             this.Text = "AdminMenu";
+            this.Load += new System.EventHandler(this.AdminMenu_Load);
             this.ResumeLayout(false);
 
         }

@@ -18,7 +18,6 @@ namespace IOOP.Forms
 
         SqlConnection link = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
 
-
         public ClubRepMenu(string N)
         {
             InitializeComponent();
@@ -29,6 +28,8 @@ namespace IOOP.Forms
         {
             UpdateClubDesc desc = new UpdateClubDesc(CName);
             desc.ShowDialog();
+
+            UpdateDescription();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -43,12 +44,7 @@ namespace IOOP.Forms
 
             lblClubName.Text = CName;
 
-            link.Open();
-            SqlCommand loadCD = new SqlCommand("SELECT description FROM Club WHERE clubName='" + CName + "'", link);
-            SqlDataReader getCD = loadCD.ExecuteReader();
-            getCD.Read();
-            txtDetails.Text = getCD.GetString(0);
-            link.Close();
+            UpdateDescription();
 
             link.Open();
             SqlCommand loadD = new SqlCommand("SELECT registrationDate FROM Club WHERE clubName='" + CName + "'", link);
@@ -62,7 +58,16 @@ namespace IOOP.Forms
         private void btnSignOut_Click(object sender, EventArgs e)
         {
             this.Hide();
-            
+        }
+
+        private void UpdateDescription()
+        {
+            link.Open();
+            SqlCommand loadCD = new SqlCommand("SELECT description FROM Club WHERE clubName='" + CName + "'", link);
+            SqlDataReader getCD = loadCD.ExecuteReader();
+            getCD.Read();
+            txtDetails.Text = getCD.GetString(0);
+            link.Close();
         }
     }
 }

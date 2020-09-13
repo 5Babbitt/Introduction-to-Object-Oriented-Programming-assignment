@@ -47,7 +47,7 @@
             this.grpDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDetails.Location = new System.Drawing.Point(12, 78);
             this.grpDetails.Name = "grpDetails";
-            this.grpDetails.Size = new System.Drawing.Size(409, 176);
+            this.grpDetails.Size = new System.Drawing.Size(404, 176);
             this.grpDetails.TabIndex = 10;
             this.grpDetails.TabStop = false;
             this.grpDetails.Text = "Club Description";
@@ -68,10 +68,10 @@
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(19, 59);
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(14, 46);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(118, 16);
+            this.lblDate.Size = new System.Drawing.Size(141, 20);
             this.lblDate.TabIndex = 9;
             this.lblDate.Text = "est. DD/MM/YYYY";
             this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -80,9 +80,9 @@
             // 
             this.grpActivityLog.Controls.Add(this.lstBoxClubAct);
             this.grpActivityLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpActivityLog.Location = new System.Drawing.Point(12, 293);
+            this.grpActivityLog.Location = new System.Drawing.Point(12, 307);
             this.grpActivityLog.Name = "grpActivityLog";
-            this.grpActivityLog.Size = new System.Drawing.Size(409, 198);
+            this.grpActivityLog.Size = new System.Drawing.Size(404, 198);
             this.grpActivityLog.TabIndex = 12;
             this.grpActivityLog.TabStop = false;
             this.grpActivityLog.Text = "Club Activity Log";
@@ -112,7 +112,7 @@
             // 
             this.lblClubName.AutoSize = true;
             this.lblClubName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClubName.Location = new System.Drawing.Point(16, 18);
+            this.lblClubName.Location = new System.Drawing.Point(12, 9);
             this.lblClubName.MaximumSize = new System.Drawing.Size(390, 0);
             this.lblClubName.Name = "lblClubName";
             this.lblClubName.Size = new System.Drawing.Size(195, 25);
@@ -123,7 +123,7 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(88, 496);
+            this.btnAdd.Location = new System.Drawing.Point(87, 510);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(244, 35);
             this.btnAdd.TabIndex = 13;
@@ -134,7 +134,7 @@
             // btnSignOut
             // 
             this.btnSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignOut.Location = new System.Drawing.Point(133, 537);
+            this.btnSignOut.Location = new System.Drawing.Point(132, 551);
             this.btnSignOut.Name = "btnSignOut";
             this.btnSignOut.Size = new System.Drawing.Size(149, 35);
             this.btnSignOut.TabIndex = 14;
@@ -146,7 +146,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(443, 580);
+            this.ClientSize = new System.Drawing.Size(428, 598);
             this.Controls.Add(this.grpDetails);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.grpActivityLog);

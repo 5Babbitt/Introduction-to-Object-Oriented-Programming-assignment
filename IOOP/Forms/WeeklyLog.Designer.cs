@@ -47,6 +47,7 @@
             this.btnAdd.TabIndex = 12;
             this.btnAdd.Text = "Add to Log";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // groupBox1
             // 

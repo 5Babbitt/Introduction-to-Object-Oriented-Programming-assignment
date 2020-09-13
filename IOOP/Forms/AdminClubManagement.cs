@@ -147,5 +147,10 @@ namespace IOOP.Forms
             }
             con.Close();
         }
+
+        private void txtDescription_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

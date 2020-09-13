@@ -60,5 +60,10 @@ namespace IOOP.Forms
             txtDetails.Text = readD.GetString(0);
             link.Close();
         }
+
+        private void txtDetails_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

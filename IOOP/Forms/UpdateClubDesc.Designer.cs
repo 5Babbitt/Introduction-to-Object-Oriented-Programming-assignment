@@ -54,6 +54,7 @@
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // grpDetails
             // 
@@ -65,6 +66,7 @@
             this.grpDetails.TabIndex = 7;
             this.grpDetails.TabStop = false;
             this.grpDetails.Text = "Club Description";
+            this.grpDetails.Enter += new System.EventHandler(this.grpDetails_Enter);
             // 
             // txtDetails
             // 

@@ -22,6 +22,7 @@ namespace IOOP.Forms
             InitializeComponent();
         }
 
+        //Deletes record from Users and Club Tables and adds it to the Archive Table
         private void btnArchive_Click(object sender, EventArgs e)
         {
             con.Open();
@@ -53,6 +54,7 @@ namespace IOOP.Forms
             UpdateListBox();
         }
 
+        //Updates any changes made to the club record
         private void btnSave_Click(object sender, EventArgs e)
         {
             con.Open();
@@ -79,7 +81,6 @@ namespace IOOP.Forms
         {
             RegisterClub regForm = new RegisterClub();
             regForm.ShowDialog();
-
             UpdateListBox();
         }
 
@@ -88,6 +89,7 @@ namespace IOOP.Forms
             UpdateListBox();
         }
 
+        //When an item is selected on the listbox the other items update
         private void lstClubs_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedClub = lstClubs.GetItemText(lstClubs.SelectedItem);
@@ -132,6 +134,7 @@ namespace IOOP.Forms
             btnArchive.Enabled = true;
         }
 
+        //This method updates the Listbox and populates them with all the clubs
         private void UpdateListBox()
         {
             lstClubs.Items.Clear();

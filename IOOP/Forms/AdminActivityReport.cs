@@ -27,6 +27,7 @@ namespace IOOP.Forms
             UpdateActivities();
         }
 
+        //Populates the listbox with records from the Activity table
         private void UpdateActivities()
         {
             con.Open();

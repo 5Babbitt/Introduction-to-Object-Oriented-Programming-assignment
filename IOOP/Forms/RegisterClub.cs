@@ -22,6 +22,7 @@ namespace IOOP.Forms
             InitializeComponent();
         }
 
+        //Checks for duplicates then either calls Register() or Reactivate()
         private void btnRegister_Click(object sender, EventArgs e)
         {
             if(txtName.TextLength > 1 && txtDescription.TextLength > 1 && txtPresident.TextLength > 1 && txtVPresident.TextLength > 1 && txtSecretary.TextLength > 1)
@@ -79,6 +80,7 @@ namespace IOOP.Forms
             this.Close();
         }
 
+        //Adds new rocord to Users and Club tables
         private void Register()
         {
             con.Open();
@@ -108,6 +110,7 @@ namespace IOOP.Forms
             con.Close();
         }
 
+        //Deletes a record from Archive and places it in Users and Club
         private void Reactivate(string n, DateTime d)
         {
             con.Open();

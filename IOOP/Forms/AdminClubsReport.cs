@@ -38,7 +38,7 @@ namespace IOOP.Forms
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            string Fpath = "C:/Users/owenh/source/repos/IOOP/IOOP/Reports/ClubReport.txt";
+            string Fpath = "D:/Software Dev/Introduction-to-Object-Oriented-Programming-assignment/IOOP/Reports/ClubReport.txt";
 
             using (StreamWriter fs = File.CreateText(Fpath))
             {

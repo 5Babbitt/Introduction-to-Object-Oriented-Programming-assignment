@@ -1,6 +1,6 @@
-# IOOP
+# Introduction to Object Oriented Programming
 
-APU  IOOP Semester Assignment:
+APU Semester Assignment:
 
 Group Members:
   - Owen Harbert,TP058238
@@ -13,8 +13,8 @@ IMPORTANT - Please alter the file paths in the following form codes:
   - ConnectionString, App.config
 
 This project is a University Clubs database with three types of user:
-- Admin
-- Club Manager
-- User
+- Admin, Can create new clubs and assign club managers
+- Club Manager, Can change club details, post notices in the club page, 
+- User, 
 
 
